@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: cyan;
+        }
+        #containertwo{
+            background-color: chartreuse;
+        }
+
+
+    </style>
+    </head>
+    <body>
+    <div id="container">
+    <div id="containerone">
+        This is container one
+        <button id="click">Click Me</button>
+        <p>hello guys how are you</p>
+    </div>
+    <div class="containertwo">
+        This is container second
+    </div>
+    </div>
+
+    <script>
+        let tn = document.getElementsByTagName('div');
+        createdElement = document.createElement('p');
+        createdElement.innerText = "This is created para";
+        tn[0].appendChild(createdElement);
+
+        createdElement2 = document.createElement('b');
+        createdElement2.innerText = "This is created bold";
+        tn[0].replaceChild(createdElement2,createdElement);
+        tn[1].appendChild(createdElement)
+        sel = document.querySelector('.containertwo');
+        console.log(sel);
+
+      
+
+
+      
+
+        let prevHtml = document.querySelectorAll('.containerone').innerHTML;
+        click.addEventListener('mouseup',function(){
+            document.querySelectorAll('.container').innerHTML = prevHtml;
+            console.log("Mouse up when clicked on the conteiners");
+
+        })
+
+        click.addEventListener('mousedown',function(){
+            document.querySelectorAll('.containerone').innerHTML = "This is is the first html"
+        })
+        logkaro = ()=>{
+            document.write("Setinterval fired")
+            console.log("I m your log");
+        }
+
+       
+
+        obj = {name: "harry", length: 1, a:{this:"tha\\\"t"}}
+        jso = JSON.stringify(obj);
+        console.log(typeof jso);
+        console.log(jso);
+
+       
+
+
+        
+
+
+
+        
+    </script>
+</body>
+</html>
