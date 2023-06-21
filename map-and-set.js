@@ -90,13 +90,3 @@ let keys2 = Array.from(map2.keys());
 keys.push("more");
 
 alert(keys2);
-
-
-
-let weakMap = new WeakMap();
-
-let obj = {};
-
-weakMap.set(obj, "ok");
-weakMap.set("test", "Whoops");
-
